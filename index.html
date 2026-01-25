@@ -1,85 +1,396 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Perfil no Google que Gera Clientes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otimização de Google Meu Negócio | LocalVisi</title>
+
+<style>
+:root{
+  --purple:#4f375d;
+  --yellow:#fdd861;
+  --bg-light:#f8f9fa;
+  --text-dark:#111827;
+  --text-gray:#4b5563;
+  --red:#ef4444;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',system-ui,sans-serif
+}
+
+body{
+  background:#fff;
+  color:var(--text-dark);
+  line-height:1.6;
+  overflow-x:hidden
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding: 50px 20px;
+  
+}
+
+.badge{
+  background:#fee2e2;
+  color:var(--red);
+  padding:8px 16px;
+  
+  border-radius:50px;
+  font-weight:700;
+  font-size:14px;
+  display:inline-block;
+  margin-bottom:20px
+}
+
+.main-title{
+  font-size:42px;
+  color:var(--purple);
+  line-height:1.2;
+  margin-bottom:25px;
+  font-weight:800
+}
+
+.section-title{
+  font-size:32px;
+  color:var(--purple);
+  margin-bottom:20px;
+  font-weight:700;
+  text-align:center
+}
+
+.sub-text{
+  font-size:20px;
+  color:var(--text-gray);
+  margin-bottom:35px
+}
+
+.btn{
+  background:var(--yellow);
+  color:#000;
+  padding:20px 35px;
+  border-radius:15px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:18px;
+  display:inline-block;
+  transition:.3s;
+  box-shadow:0 10px 20px rgba(253,216,97,.3)
+}
+#btd{
+
+display: flex;
+justify-content: center;
+align-content: center;
+margin-top: 20px;
+}
+#bse{
+  margin-bottom: 20px;
+}
+#buton-incluso{
+  margin-bottom: 30px;
+}
+#bt_problema{
+  margin-top: 30px;
+}
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  padding:80px 0
+}
+
+.row-reverse{flex-direction:row-reverse}
+.col-text{flex:1.2}
+.col-image{flex:.8}
+
+.img-card-main{
+  width:100%;
+  border-radius:40px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.1)
+}
+
+.img-card-main img{
+  width:100%;
+  display:block
+}
+
+.pain-list,.check-list{
+  list-style:none;
+  margin-bottom:30px
+}
+
+.pain-list li,.check-list li{
+  font-size:18px;
+  margin-bottom:12px
+}
+
+/* COMPARAÇÃO */
+.comparison-grid{
+  display:flex;
+  gap:40px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:50px
+}
+
+.comparison-item{
+  display:flex;
+  gap:20px;
+  align-items:center
+}
+
+.card-info{
+  padding:40px;
+  border-radius:25px;
+  width:320px
+}
+
+.card-info.before{
+  background:#f3f4f6;
+  border-left:6px solid #d1d5db
+}
+
+.card-info.after{
+  background:var(--purple);
+  color:#fff;
+  border-left:6px solid var(--yellow)
+}
+
+
+.img-side{
+  width:300px;
+  overflow: scroll;
+  border-radius:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,.1);height: 300px;
+}
+
+.mobile-fixed{display:none}
+
+@media(max-width:900px){
+  .row{flex-direction:column;text-align:center}
+  .col-image{order:-1}
+  .comparison-item{flex-direction:column}
+  .img-side{width:100%;max-width:260px}
+  .main-title{font-size:32px}
+  .mobile-fixed{
+    display:block;
+    position:fixed;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    z-index:1000
+  }
+  .btn.full{width:100%}
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Seu Perfil no Google</h1>
-    <nav>
-      <a href="#home">Início</a> |
-      <a href="#sobre">Como Funciona</a> |
-      <a href="#contato">Contato</a>
-    </nav>
-    <hr>
-  </header>
+<!-- HERO -->
+<section class="container">
+  <div class="row">
+    <div class="col-text">
+      <div class="badge">🚨 Você já está no Google…</div>
+      <h1 class="main-title">Mas seus clientes estão escolhendo o concorrente</h1>
+      <p class="sub-text">
+        Descubra como transformar um perfil invisível no Google Meu Negócio
+        em uma máquina diária de ligações e mensagens no WhatsApp.
+      </p>
+      <a href="https://wa.me/5524992529294" class="btn">
+        Quero transformar meu Google agora
+      </a>
+    </div>
 
-  <section id="home">
-    <h2>Seu Negócio Aparece no Google…</h2>
-    <p><strong>Mas isso não está trazendo clientes?</strong></p>
+    <div class="col-image">
+      <div class="img-card-main">
+        <img src="imagem/bannne.png" alt="Otimização Local no Google">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <p>
-      Muitos negócios já aparecem no Google, mas não recebem ligações,
-      mensagens no WhatsApp ou visitas.
-    </p>
+<!-- DOR -->
+<section style="background:var(--bg-light)">
+  <div class="container">
+    <div class="row row-reverse">
+      <div class="col-text">
+        <h2 class="section-title" style="text-align:left">😓 A dor que quase ninguém percebe</h2>
+        <ul class="pain-list">
+          <li>📉 O telefone quase não toca</li>
+          <li>📩 O WhatsApp fica em silêncio</li>
+          <li>📍 Seu negócio aparece escondido no Google Maps</li>
+          <li>🤯 Seus concorrentes fecham com clientes que eram seus</li>
+        </ul>
+        <p><strong>👉 O problema não é estar no Google. É ser ignorado por ele.</strong></p>
+          <a href="https://wa.me/5524992529294" class="btn" id="bt_problema">
+        Quero resolver esse problema
+      </a>
+    
+      </div>
 
-    <p>
-      O problema não é aparecer.  
-      É não saber transformar visibilidade em confiança.
-    </p>
-  </section>
+      <div class="col-image">
+        <div class="img-card-main">
+            <img src="imagem/perfil-anterios.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <hr>
+<!-- VERDADE -->
+<section class="container">
+  <div class="row">
+    <div class="col-text">
+      <h2 class="section-title" style="text-align:left">🧠 A verdade sobre posicionamento</h2>
+      <p class="sub-text">
+        O Google não mostra quem é melhor. Ele mostra quem parece mais relevante.
+        Se o seu perfil não envia os sinais certos, você nunca aparecerá no topo.
+      </p>
+      <a href="https://wa.me/5524992529294" class="btn">
+        Quero ser relevante no Google
+      </a>
+    </div>
 
-  <section id="sobre">
-    <h2>Por Que Isso Acontece?</h2>
+    <div class="col-image">
+      <div class="img-card-main">
+        <img src="imagem/Gemini_Generated_Image_q0ymeeq0ymeeq0ym (1).png" alt="SEO Local">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <p>
-      Quando alguém pesquisa no Google, vê várias empresas ao mesmo tempo.
-      O cliente escolhe aquela que parece mais organizada e confiável.
-    </p>
+<!-- SERVIÇO -->
+<section style="background:var(--purple);color:#fff">
+  <div class="container">
+    <div class="row row-reverse">
+      <div class="col-text">
+        <h2 class="section-title" style="color:#fff;text-align:left">🚀 Nosso serviço</h2>
+        <ul class="check-list">
+          <li>✔️ Apareça antes dos concorrentes</li>
+          <li>✔️ Gere mais cliques qualificados</li>
+          <li>✔️ Converta buscas em mensagens no WhatsApp</li>
+          <li>✔️ SEO Local avançado e estratégico</li>
+        </ul>
 
-    <p>
-      Se o perfil não estiver bem estruturado, a pessoa simplesmente ignora
-      e clica no próximo.
-    </p>
+        <a href="https://wa.me/5524992529294" class="btn" id="bse">
+        Quero gerar clientes pelo Google
+      </a>
+        <p style="color:var(--yellow);font-weight:700">
+          Sem tráfego pago. Apenas estratégia orgânica e posicionamento inteligente.
+        </p>
+      </div>
 
-    <h3>O que é ajustado no perfil:</h3>
-    <ul>
-      <li>Informações claras e estratégicas</li>
-      <li>Descrição pensada para o cliente</li>
-      <li>Foco em ligações e WhatsApp</li>
-      <li>Organização geral do perfil</li>
-    </ul>
-  </section>
+      <div class="col-image">
+        <div class="img-card-main" style="background:#fff;padding:10px">
+          <img src="imagem/ligandoempresa.png" alt="Resultado Google">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <hr>
+<!-- ANTES E DEPOIS -->
+<section class="container">
+  <h2 class="section-title">🔄 Veja a diferença na prática</h2>
 
-  <section id="contato">
-    <h2>Próximo Passo</h2>
+  <div class="comparison-grid">
+    <div class="comparison-item">
+      <div class="card-info before">
+        <h3>ANTES </h3>
+        <ul>
+            <li>Perfil parado</li>
+            <li>sem estratégia </li>
+            <li>invisível para clientes da sua região</li>
+        </ul>
+      </div>
+      <img src="imagem/antes.png" class="img-side" alt="Antes">
+    </div>
 
-    <p>
-      Se você já aparece no Google, o potencial já existe.
-      O que falta é ajustar o perfil da forma correta.
-    </p>
+    <div class="comparison-item">
+      <div class="card-info after">
+        <h3>DEPOIS</h3>
+        <ul>
+          <li>Perfil otimizado</li>
+          <li>Bem posicionado</li>
+          <li>Gerando contatos todos os dias</li>
+        </ul>
+      </div>
+      <img src="imagem/depois2.png" class="img-side" alt="Depois">
+    </div>
+  </div>
+  <div id="btd">
+  <a href="https://wa.me/5524992529294" class="btn" id="btd">
+        Quero resultados como esses
+      </a>
+  </div>
+</section>
 
-    <p>
-      👉 Entre em contato e entenda como melhorar seu resultado.
-    </p>
+<!-- INCLUSO -->
+<section style="background:var(--bg-light)">
+  <div class="container">
+    <div class="row">
+      <div class="col-text">
+        <h2 class="section-title" style="text-align:left">🧾 O que está incluso</h2>
+        <ul class="check-list">
+          <li>🔍 Otimização completa do perfil</li>
+          <li>📝 Copywriting estratégico</li>
+          <li>📸 Estratégia de fotos e postagens</li>
+          <li>⭐ Gestão de avaliações</li>
+        </ul>
+    <a href="https://wa.me/5524992529294" class="btn" id="buton-incluso">
+        Quero um perfil profissional
+      </a>
 
-    <p>
-      <a href="#">Quero melhorar meu perfil no Google</a>
-    </p>
-  </section>
+        <div style="background:#fee2e2;padding:20px;border-radius:15px;border-left:5px solid var(--red)">
+          <strong>🛡️ Garantia LocalVisi:</strong>
+          foco total em resultado. Se não houver melhora na visibilidade,
+          continuamos trabalhando até alcançar.
+        </div>
+      
+      </div>
 
-  <hr>
+      <div class="col-image">
+        <div class="img-card-main">
+          <img src="imagem/resultado.png" alt="Inclusos">
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2026 - Todos os direitos reservados</p>
-  </footer>
+  
+</section>
+
+<!-- FAQ -->
+<section class="container">
+  <h2 class="section-title">❓ Perguntas frequentes</h2>
+
+  <div style="max-width:800px;margin:auto">
+    <div style="padding:20px 0;border-bottom:1px solid #eee">
+      <strong>Funciona para o meu tipo de negócio?</strong>
+      <p>Sim. Ideal para negócios locais que atendem presencialmente ou por região.</p>
+    </div>
+
+    <div style="padding:20px 0;border-bottom:1px solid #eee">
+      <strong>Preciso pagar anúncios?</strong>
+      <p>Não. O trabalho é 100% focado em posicionamento orgânico.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:50px">
+    <a href="https://wa.me/5524992529294" class="btn">
+      Quero saber se funciona para mim
+    </a>
+  </div>
+</section>
+
 
 </body>
 </html>
